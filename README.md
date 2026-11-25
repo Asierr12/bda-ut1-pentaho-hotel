@@ -18,7 +18,7 @@ El procedimiento puede repetirse y **no publica nada** si falta una entrada o si
 |---|---|
 | Pentaho Data Integration | 9.4.0.0-343 |
 | Java | OpenJDK 11.0.33 (entorno de ejecución de las pruebas) |
-| Sistema | Windows (equipo `pcasier`); pruebas ejecutadas con `kitchen.sh`/`pan.sh` en el entorno Linux del mismo equipo |
+| Sistema | Windows (equipo `pcasier`). Ejecución con `ejecutar_cierre.bat` (Kitchen.bat) en Windows; las seis pruebas se lanzaron con `kitchen.sh`/`pan.sh` en el entorno Linux del mismo equipo |
 
 No se usan bases de datos, JDBC, plugins, Spark ni servicios en la nube.
 
@@ -57,9 +57,10 @@ bda-ut1-pentaho-hotel/
 3. Lanzar el job con Kitchen:
 
    ```bat
-   set PDI_HOME=C:\ruta\a\data-integration
    ejecutar_cierre.bat prueba1
    ```
+
+   También vale con doble clic. El script usa `PDI_HOME` si está definida; si no, busca Pentaho en `C:\pentaho\data-integration` y en `Descargas\pdi-ce-9.4.0.0-343\data-integration`. Al terminar muestra `RESULTADO: CIERRE OK` o el error, y espera una tecla.
 
    También se puede lanzar directamente:
 
