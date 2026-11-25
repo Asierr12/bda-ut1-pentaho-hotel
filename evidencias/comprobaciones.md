@@ -17,28 +17,28 @@ Columna **Obtenido**: métricas de pasos (W = filas escritas) y salidas de la ej
 | 10 | Filas tras LEFT OUTER reservas-cobros | "Unir reservas con cobros (LEFT OUTER)" | 20 | 20 | ✅ |
 | 11 | Reservas sin cobro | `salida/reservas_sin_cobro.csv` | 5: ids 4, 9, 11, 15, 18 | 5: ids 4, 9, 11, 15, 18 | ✅ |
 | 12 | Reconciliación | 11 + 6 | 15 + 5 = 20 | 15 + 5 = 20 | ✅ |
-| 13 | Contraste por grupo con la tabla del taller 2 | tabla de abajo | coinciden los 13 grupos | pendiente: no tengo la tabla del taller 2 |  |
+| 13 | Contraste por grupo con la tabla del taller 2 | tabla de abajo | coinciden los 13 grupos | coinciden los 13 grupos | ✅ |
 
 ## Informe por grupo (esperado con los datos de A011)
 
-Se ha calculado independientemente de Pentaho, sumando a mano los cobros del paquete A011. Está también en `evidencias/referencia/`.
+Se ha calculado independientemente de Pentaho, sumando a mano los cobros del paquete A011 (también en `evidencias/referencia/`). La última columna se ha contrastado con la tabla «Resultado de referencia del taller 2» de la web de la asignatura (https://iesataulfoargentasor.github.io/bda_2026_2027/ut1/pentaho/#resultado-de-referencia-del-taller-2): coinciden los 13 grupos, las 15 reservas y los 3965.50 €.
 
 | hotel | canal | n_reservas | cobrado_total | Obtenido | ¿Coincide con el taller 2? |
 |---|---|---|---|---|---|
-| Comillas | ota | 1 | 132.00 | igual | _por contrastar_ |
-| Comillas | recepcion | 1 | 525.00 | igual | _por contrastar_ |
-| Comillas | web | 2 | 642.00 | igual | _por contrastar_ |
-| Laredo | ota | 1 | 124.00 | igual | _por contrastar_ |
-| Laredo | web | 2 | 496.50 | igual | _por contrastar_ |
-| Noja | ota | 1 | 195.00 | igual | _por contrastar_ |
-| Noja | web | 1 | 280.00 | igual | _por contrastar_ |
-| Potes | ota | 1 | 260.00 | igual | _por contrastar_ |
-| Potes | recepcion | 1 | 201.00 | igual | _por contrastar_ |
-| Potes | web | 1 | 150.00 | igual | _por contrastar_ |
-| Santander | ota | 1 | 390.00 | igual | _por contrastar_ |
-| Santander | recepcion | 1 | 410.00 | igual | _por contrastar_ |
-| Santander | web | 1 | 160.00 | igual | _por contrastar_ |
-| **Total** | | **15** | **3965.50** | 15 / 3965.50 | _por contrastar_ |
+| Comillas | ota | 1 | 132.00 | igual | ✅ sí |
+| Comillas | recepcion | 1 | 525.00 | igual | ✅ sí |
+| Comillas | web | 2 | 642.00 | igual | ✅ sí |
+| Laredo | ota | 1 | 124.00 | igual | ✅ sí |
+| Laredo | web | 2 | 496.50 | igual | ✅ sí |
+| Noja | ota | 1 | 195.00 | igual | ✅ sí |
+| Noja | web | 1 | 280.00 | igual | ✅ sí |
+| Potes | ota | 1 | 260.00 | igual | ✅ sí |
+| Potes | recepcion | 1 | 201.00 | igual | ✅ sí |
+| Potes | web | 1 | 150.00 | igual | ✅ sí |
+| Santander | ota | 1 | 390.00 | igual | ✅ sí |
+| Santander | recepcion | 1 | 410.00 | igual | ✅ sí |
+| Santander | web | 1 | 160.00 | igual | ✅ sí |
+| **Total** | | **15** | **3965.50** | 15 / 3965.50 | ✅ sí |
 
 ## Reservas sin cobro (esperado)
 
