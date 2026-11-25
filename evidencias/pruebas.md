@@ -45,6 +45,14 @@ Códigos de salida: 0 = éxito, 1 = terminado con errores.
 - **Pasos:** se borraron los provisionales manipulados y se ejecutó el job completo.
 - **Obtenido:** rc=0. Se regeneran `temporal/`, se valida, se publica y aparece `CIERRE OK`. Las salidas son idénticas a las de la prueba 1.
 
+## Ejecución en Windows con `ejecutar_cierre.bat`
+
+Además de las seis pruebas, el 25/11/2026 se lanzó el job en Windows con doble clic sobre `ejecutar_cierre.bat`, que llama a `Kitchen.bat` de la instalación de PDI 9.4 del equipo.
+
+- **Resultado:** `RESULTADO: CIERRE OK - informes publicados en salida\`. Todas las entradas del job terminan con `result=[true]`.
+- **Comprobación:** los CSV publicados son idénticos byte a byte a los de la prueba 1 (mismo md5).
+- **Log:** `logs/ejecucion_windows.log`, convertido a UTF-8. El log original de Kitchen se escribe en la codificación de Windows.
+
 ## Conclusión general
 
 Los errores de entrada (prueba 3) y de validación (pruebas 4 y 5) impiden publicar. En todos esos casos `salida/` conservó el último informe válido sin cambios. Repetir la ejecución no acumula filas (prueba 2) y, al restaurar los datos, el job vuelve a publicar exactamente el mismo resultado (prueba 6).
