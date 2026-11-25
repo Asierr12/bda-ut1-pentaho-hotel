@@ -1,0 +1,111 @@
+2026/11/25 19:09:49 - Kitchen - Logging is at level : Basic
+2026/11/25 19:09:49 - Kitchen - Start of run.
+2026/11/25 19:09:50 - cierre_hotel - Start of job execution
+2026/11/25 19:09:50 - cierre_hotel - Starting entry [¿Existe reservas_pdi.csv?]
+2026/11/25 19:09:50 - cierre_hotel - Starting entry [¿Existe cobros_pdi.csv?]
+2026/11/25 19:09:50 - cierre_hotel - Starting entry [¿Existe hoteles_pdi.csv?]
+2026/11/25 19:09:50 - cierre_hotel - Starting entry [informe_cobros]
+2026/11/25 19:09:50 - informe_cobros - Using run configuration [Pentaho local]
+2026/11/25 19:09:50 - informe_cobros - Dispatching started for transformation [informe_cobros]
+2026/11/25 19:09:50 - Leer hoteles.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../entrada/hoteles_pdi.csv'
+2026/11/25 19:09:50 - Leer hoteles.0 - Finished processing (I=6, O=0, R=0, W=5, U=0, E=0)
+2026/11/25 19:09:50 - Leer cobros.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../entrada/cobros_pdi.csv'
+2026/11/25 19:09:50 - Leer reservas.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../entrada/reservas_pdi.csv'
+2026/11/25 19:09:50 - Leer cobros.0 - Finished processing (I=16, O=0, R=0, W=15, U=0, E=0)
+2026/11/25 19:09:50 - Leer reservas.0 - Finished processing (I=21, O=0, R=0, W=20, U=0, E=0)
+2026/11/25 19:09:50 - Ordenar hoteles por id_hotel.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:50 - Ordenar cobros por id_reserva.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 19:09:50 - Ordenar reservas por id_reserva.0 - Finished processing (I=0, O=0, R=20, W=20, U=0, E=0)
+2026/11/25 19:09:51 - Unir reservas y cobros (INNER).0 - Finished processing (I=0, O=0, R=35, W=15, U=0, E=0)
+2026/11/25 19:09:51 - Ordenar por id_hotel.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 19:09:51 - Añadir hotel (INNER).0 - Finished processing (I=0, O=0, R=20, W=15, U=0, E=0)
+2026/11/25 19:09:51 - Ordenar por hotel y canal.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 19:09:51 - Agrupar por hotel y canal.0 - Finished processing (I=0, O=0, R=15, W=13, U=0, E=0)
+2026/11/25 19:09:51 - Escribir informe provisional.0 - Finished processing (I=0, O=14, R=13, W=13, U=0, E=0)
+2026/11/25 19:09:51 - cierre_hotel - Starting entry [reservas_sin_cobro]
+2026/11/25 19:09:51 - reservas_sin_cobro - Using run configuration [Pentaho local]
+2026/11/25 19:09:51 - reservas_sin_cobro - Dispatching started for transformation [reservas_sin_cobro]
+2026/11/25 19:09:51 - Leer reservas.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../entrada/reservas_pdi.csv'
+2026/11/25 19:09:51 - Leer cobros.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../entrada/cobros_pdi.csv'
+2026/11/25 19:09:51 - Leer reservas.0 - Finished processing (I=21, O=0, R=0, W=20, U=0, E=0)
+2026/11/25 19:09:51 - Leer cobros.0 - Finished processing (I=16, O=0, R=0, W=15, U=0, E=0)
+2026/11/25 19:09:51 - Leer hoteles.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../entrada/hoteles_pdi.csv'
+2026/11/25 19:09:51 - Leer hoteles.0 - Finished processing (I=6, O=0, R=0, W=5, U=0, E=0)
+2026/11/25 19:09:51 - Ordenar reservas por id_reserva.0 - Finished processing (I=0, O=0, R=20, W=20, U=0, E=0)
+2026/11/25 19:09:51 - Ordenar hoteles por id_hotel.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:51 - Renombrar id_reserva a id_reserva_cobro.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 19:09:51 - Ordenar cobros por id_reserva_cobro.0 - Finished processing (I=0, O=0, R=15, W=15, U=0, E=0)
+2026/11/25 19:09:51 - Unir reservas con cobros (LEFT OUTER).0 - Finished processing (I=0, O=0, R=35, W=20, U=0, E=0)
+2026/11/25 19:09:51 - Sin cobro (id_reserva_cobro nulo).0 - Finished processing (I=0, O=0, R=20, W=5, U=0, E=0)
+2026/11/25 19:09:51 - Ordenar por id_hotel.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Añadir hotel (LEFT OUTER).0 - Finished processing (I=0, O=0, R=10, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Añadir motivo.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Seleccionar columnas.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Ordenar por id_reserva.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Escribir reservas sin cobro.0 - Finished processing (I=0, O=6, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [¿Existe informe provisional?]
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [¿Existe listado provisional?]
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [validar_informe]
+2026/11/25 19:09:52 - validar_informe - Using run configuration [Pentaho local]
+2026/11/25 19:09:52 - validar_informe - Dispatching started for transformation [validar_informe]
+2026/11/25 19:09:52 - Leer informe provisional.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../temporal/informe_hotel_canal.csv'
+2026/11/25 19:09:52 - Leer informe provisional.0 - Finished processing (I=14, O=0, R=0, W=13, U=0, E=0)
+2026/11/25 19:09:52 - Resumir informe (sin claves).0 - Finished processing (I=0, O=0, R=13, W=1, U=0, E=0)
+2026/11/25 19:09:52 - Informe válido.0 - 
+2026/11/25 19:09:52 - Informe válido.0 - ------------> Linenr 1------------------------------
+2026/11/25 19:09:52 - Informe válido.0 - VALIDACION OK: informe_hotel_canal.csv cumple 13 grupos, 15 reservas y 3965.50 EUR
+2026/11/25 19:09:52 - Informe válido.0 - 
+2026/11/25 19:09:52 - Informe válido.0 - n_grupos = 13
+2026/11/25 19:09:52 - Informe válido.0 - suma_n_reservas = 15
+2026/11/25 19:09:52 - Informe válido.0 - suma_cobrado = 3965.5
+2026/11/25 19:09:52 - Informe válido.0 - 
+2026/11/25 19:09:52 - Informe válido.0 - ====================
+2026/11/25 19:09:52 - Valores de referencia.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 19:09:52 - ¿Cumple la referencia?.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 19:09:52 - Informe válido.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [validar_sin_cobro]
+2026/11/25 19:09:52 - validar_sin_cobro - Using run configuration [Pentaho local]
+2026/11/25 19:09:52 - validar_sin_cobro - Dispatching started for transformation [validar_sin_cobro]
+2026/11/25 19:09:52 - Leer listado provisional.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../temporal/reservas_sin_cobro.csv'
+2026/11/25 19:09:52 - Leer listado provisional.0 - Finished processing (I=6, O=0, R=0, W=5, U=0, E=0)
+2026/11/25 19:09:52 - ¿Identificador esperado?.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Ordenar por id_reserva.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Contar filas por id_reserva.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - ¿Una fila por id?.0 - Finished processing (I=0, O=0, R=5, W=5, U=0, E=0)
+2026/11/25 19:09:52 - Resumir listado (sin claves).0 - Finished processing (I=0, O=0, R=5, W=1, U=0, E=0)
+2026/11/25 19:09:52 - Listado válido.0 - 
+2026/11/25 19:09:52 - Listado válido.0 - ------------> Linenr 1------------------------------
+2026/11/25 19:09:52 - Listado válido.0 - VALIDACION OK: reservas_sin_cobro.csv contiene 5 reservas (4, 9, 11, 15, 18) sin duplicados
+2026/11/25 19:09:52 - Listado válido.0 - 
+2026/11/25 19:09:52 - Listado válido.0 - n_identificadores = 5
+2026/11/25 19:09:52 - Listado válido.0 - n_filas = 5
+2026/11/25 19:09:52 - Listado válido.0 - 
+2026/11/25 19:09:52 - Listado válido.0 - ====================
+2026/11/25 19:09:52 - ¿5 identificadores y 5 filas?.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 19:09:52 - Listado válido.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [Publicar informe_hotel_canal.csv]
+2026/11/25 19:09:52 - Publicar informe_hotel_canal.csv - Starting ...
+2026/11/25 19:09:52 - Publicar informe_hotel_canal.csv - Processing row source File/folder source : [file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/temporal/informe_hotel_canal.csv] ... destination file/folder : [file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/salida/informe_hotel_canal.csv]... wildcard : [null]
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [Publicar reservas_sin_cobro.csv]
+2026/11/25 19:09:52 - Publicar reservas_sin_cobro.csv - Starting ...
+2026/11/25 19:09:52 - Publicar reservas_sin_cobro.csv - Processing row source File/folder source : [file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/temporal/reservas_sin_cobro.csv] ... destination file/folder : [file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/salida/reservas_sin_cobro.csv]... wildcard : [null]
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [Registrar éxito]
+2026/11/25 19:09:52 - cierre_hotel - CIERRE OK: informe_hotel_canal.csv y reservas_sin_cobro.csv validados y publicados en salida/.
+2026/11/25 19:09:52 - cierre_hotel - Starting entry [Éxito]
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [Éxito] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [Registrar éxito] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [Publicar reservas_sin_cobro.csv] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [Publicar informe_hotel_canal.csv] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [validar_sin_cobro] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [validar_informe] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [¿Existe listado provisional?] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [¿Existe informe provisional?] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [reservas_sin_cobro] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [informe_cobros] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [¿Existe hoteles_pdi.csv?] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [¿Existe cobros_pdi.csv?] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Finished job entry [¿Existe reservas_pdi.csv?] (result=[true])
+2026/11/25 19:09:52 - cierre_hotel - Job execution finished
+2026/11/25 19:09:52 - Kitchen - Finished!
+2026/11/25 19:09:52 - Kitchen - Start=2026/11/25 19:09:50.621, Stop=2026/11/25 19:09:52.288
+2026/11/25 19:09:52 - Kitchen - Processing ended after 1 seconds.

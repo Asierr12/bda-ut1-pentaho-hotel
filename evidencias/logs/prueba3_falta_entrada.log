@@ -1,0 +1,15 @@
+2026/11/25 19:09:55 - Kitchen - Logging is at level : Basic
+2026/11/25 19:09:55 - Kitchen - Start of run.
+2026/11/25 19:09:56 - cierre_hotel - Start of job execution
+2026/11/25 19:09:56 - cierre_hotel - Starting entry [¿Existe reservas_pdi.csv?]
+2026/11/25 19:09:56 - cierre_hotel - Starting entry [¿Existe cobros_pdi.csv?]
+2026/11/25 19:09:56 - cierre_hotel - Starting entry [Abort: falta cobros_pdi.csv]
+2026/11/25 19:09:56 - Abort: falta cobros_pdi.csv - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : ERROR: falta la entrada entrada/cobros_pdi.csv. No se genera ni se publica el informe.
+2026/11/25 19:09:56 - cierre_hotel - Finished job entry [Abort: falta cobros_pdi.csv] (result=[false])
+2026/11/25 19:09:56 - cierre_hotel - Finished job entry [¿Existe cobros_pdi.csv?] (result=[false])
+2026/11/25 19:09:56 - cierre_hotel - Finished job entry [¿Existe reservas_pdi.csv?] (result=[false])
+2026/11/25 19:09:56 - cierre_hotel - Job execution finished
+2026/11/25 19:09:56 - Kitchen - Finished!
+2026/11/25 19:09:56 - Kitchen - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Finished with errors
+2026/11/25 19:09:56 - Kitchen - Start=2026/11/25 19:09:56.859, Stop=2026/11/25 19:09:56.910
+2026/11/25 19:09:56 - Kitchen - Processing ended after 0 seconds.

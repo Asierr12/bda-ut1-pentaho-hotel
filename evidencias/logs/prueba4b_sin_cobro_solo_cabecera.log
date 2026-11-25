@@ -1,0 +1,15 @@
+2026/11/25 19:10:02 - Pan - Logging is at level : Basic
+2026/11/25 19:10:02 - Pan - Start of run.
+2026/11/25 19:10:02 - validar_sin_cobro - Dispatching started for transformation [validar_sin_cobro]
+2026/11/25 19:10:02 - Leer listado provisional.0 - Header row skipped in file 'file:///sessions/rcw-01bqvrjxkaymgjernkcvapjx/repo/procesos/../temporal/reservas_sin_cobro.csv'
+2026/11/25 19:10:02 - Leer listado provisional.0 - Finished processing (I=1, O=0, R=0, W=0, U=0, E=0)
+2026/11/25 19:10:02 - Resumir listado (sin claves).0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2026/11/25 19:10:02 - Número de filas incorrecto.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Row nr 1 causing abort "Abort and log as an error": [0], [null]2026/11/25 19:10:02 - ¿5 identificadores y 5 filas?.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+
+2026/11/25 19:10:02 - Número de filas incorrecto.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : VALIDACION FALLIDA: reservas_sin_cobro.csv no tiene 5 identificadores / 5 filas (o está vacío). No se publica.
+2026/11/25 19:10:02 - Número de filas incorrecto.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=1)
+2026/11/25 19:10:02 - validar_sin_cobro - Transformation detected one or more steps with errors.
+2026/11/25 19:10:02 - validar_sin_cobro - Transformation is killing the other steps!
+2026/11/25 19:10:02 - Pan - Finished!
+2026/11/25 19:10:02 - Pan - Start=2026/11/25 19:10:02.376, Stop=2026/11/25 19:10:02.719
+2026/11/25 19:10:02 - Pan - Processing ended after 0 seconds.
